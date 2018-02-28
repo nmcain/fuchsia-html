@@ -3,16 +3,16 @@
 <head>
   <title>fuchsia</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" 
-      type="image/png" 
-      href="fuchsia.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="5.css"> 
+<script src="material.min.js"></script>
+<script src="main.js"></script>
 <style>
 body {
   margin:0;
-  background:url("bg.jpg") no-repeat fixed center;
+  background:url("assets/bg3.jpg") no-repeat fixed center;
   background-color:black;
-  /*Comment this line if you are using it as a chrome app*/	overflow:hidden;
+  overflow:hidden;
 
 }
 
@@ -70,7 +70,7 @@ body {
   
   <div class="navbar">
   <a href="#menu" >8:33</a>
-    <a class="launcher" href="#home"><img class="home" src="circle.svg" alt="0x324545" style="width:20px;height:20px;"></a>
+    <a class="launcher" href="#home"><img class="home" src="assets/circle.svg" alt="0x324545" style="width:20px;height:20px;"></a>
 <!--  <a href="#news">Roboto</a>
   <a href="#contact">Contact</a>-->
 </div>
@@ -84,24 +84,446 @@ body {
 </div>
 </a>
 
+<div align=right>
+<a class="other5" name="menu">
+<div class="main256">
+<style>
+  .main256 {
+  height: 268px; /* Used in this example to enable scrolling */
 
-<!--<div align=right>
-<a class="other" name="menu">
+}
+ .other5 {
+  height: 300px; /* Used in this example to enable scrolling */
+ 
+}
+</style>
+
+</div>
+</a>
+</div>
+<div align=right>
+<a class="other" name="f">
 <div class="main25">
 <style>
   .main25 {
-  height: 300px; /* Used in this example to enable scrolling */
-  background:#ffffff;
-   margin-top:100px;
+  height: 450px; /* Used in this example to enable scrolling */
+ background:#eee;
+ width:350px;
+ border-radius:2px;
+ 
 }
  .other {
-  height: 300px; /* Used in this example to enable scrolling */
-  margin-top:100px;
+  height: 500px; /* Used in this example to enable scrolling */
+  width:350px;
+  border-radius:2px;
+  box-shadow: 0px 0px 10px #000;
+ 
 }
 </style>
+
+
+
+<div class="user">
+  <style>
+    .user{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      border-radius:2px;
+      background:#fff;
+    }
+    .icon{
+      float:left;
+      border-radius:100%;
+      height:40px;
+      width:40px;
+      margin-top:5px;
+      margin-left:5px;
+      background:url('assets/sf.png') center center;
+    }
+    .username{
+      float:left;
+      font-size:15px;
+      color:#222222;
+      font-weight:thin;
+      margin-top:15px;
+      margin-left:15px;
+    }
+    .bt{
+      margin-top:7px;
+      margin-right:8px;
+    }
+       
+  </style>
+  <div class="icon">
+  </div>
+  <div class="username">Noah Cain</div>
+   <!-- <div class="email">nmcain@gmail.com</div>-->
+  <button class="bt mdl-button mdl-js-button mdl-js-ripple-effect">
+  Sign out
+</button>
+</div>
+
+  <div class="kb">
+     <style>
+    .kb{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .kb:hover{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+     }
+    .kbicon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .grow{
+      float:left;
+      margin-top:15px;
+      font-size:15px;
+      margin-left:15px;
+      color:#212121;
+    }
+     .grow2{
+      float:left;
+      margin-top:15px;
+      font-size:20px;
+      margin-left:150px;
+      color:#212121;
+    }
+       
+  </style>
+    <i class="kbicon material-icons">keyboard</i>
+    <div class="grow">US keyboard</div>
+    <i class="grow2 material-icons">chevron_right</i>
+  </div>
+
+
+
+<div class="wifi">
+     <style>
+    .wifi{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .wifi:hover{
+          width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+    }
+    .wificon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .grow3{
+      float:left;
+      margin-top:15px;
+      font-size:15px;
+      margin-left:15px;
+      color:#212121;
+    }
+     .grow4{
+      float:left;
+      margin-top:15px;
+      font-size:20px;
+      margin-left:175px;
+      color:#212121;
+    }
+       
+  </style>
+    <i class="wificon material-icons">wifi_lock</i>
+    <div class="grow3">Network</div>
+    <i class="grow4 material-icons">chevron_right</i>
+  </div>
+  
+  
+  
+  
+  
+  <div class="bt2">
+     <style>
+    .bt2{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .bt2:hover{
+          width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+    }
+    .bticon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .grow5{
+      float:left;
+      margin-top:15px;
+      font-size:15px;
+      margin-left:15px;
+      color:#212121;
+    }
+     .grow6{
+      float:left;
+      margin-top:15px;
+      font-size:20px;
+      margin-left:170px;
+      color:#212121;
+    }
+       
+  </style>
+    <i class="bticon material-icons">bluetooth</i>
+    <div class="grow5">Bluetooth</div>
+    <i class="grow6 material-icons">chevron_right</i>
+  </div>
+
+
+
+
+
+<div class="cast">
+     <style>
+    .cast{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .cast:hover{
+          width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+    }
+    .casticon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .growcast{
+      float:left;
+      margin-top:15px;
+      font-size:15px;
+      margin-left:15px;
+      color:#212121;
+    }
+     .growcast2{
+      float:left;
+      margin-top:15px;
+      font-size:20px;
+      margin-left:205px;
+      color:#212121;
+    }
+       
+  </style>
+    <i class="casticon material-icons">cast</i>
+    <div class="growcast">Cast</div>
+    <i class="growcast2 material-icons">chevron_right</i>
+  </div>
+
+
+
+
+
+
+<div class="volume_up">
+     <style>
+    .volume_up{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .volume_up:hover{
+          width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+    }
+    .volume_upicon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .spacerv{
+    height:15px;
+    width:200px;
+    }
+       
+  </style>
+    <i class="volume_upicon material-icons">volume_up</i>
+    <div class="spacerv"></div>
+     <input style"margin-top:15px;" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="80" tabindex="0"/>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="settings">
+     <style>
+    .settings{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .settings:hover{
+          width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+    }
+    .settingsicon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .settingscast{
+      float:left;
+      margin-top:15px;
+      font-size:15px;
+      margin-left:15px;
+      color:#333;
+    }
+     .settingscast2{
+      float:left;
+      margin-top:15px;
+      font-size:20px;
+      margin-left:180px;
+      color:#333;
+    }
+       
+  </style>
+    <i class="settingsicon material-icons">settings</i>
+    <div class="settingscast">Settings</div>
+    <i class="settingscast2 material-icons">chevron_right</i>
+  </div>
+
+<div class="notify">
+     <style>
+    .notify{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#fff;
+    }
+     .notify:hover{
+          width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+      background:#eee;
+    }
+    .notifyicon{
+      float:left;
+      font-size:30px;
+      color:#757575;
+      font-weight:thin;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .notifycast{
+      float:left;
+      margin-top:15px;
+      font-size:15px;
+      margin-left:15px;
+      color:#333;
+    }
+     .notifycast2{
+      float:left;
+      margin-top:15px;
+      font-size:20px;
+      margin-left:150px;
+      color:#333;
+    }
+       
+  </style>
+    <i class="notifyicon material-icons">notifications</i>
+    <div class="notifycast">Notifications</div>
+    <i class="notifycast2 material-icons">chevron_right</i>
+  </div>
+
+
+
+<div class="final">
+     <style>
+    .final{
+      width:350px;
+      border-bottom:1px solid #eee;
+      height:50px;
+    }
+    .menuicons{
+      color:#757575;
+      font-size:30px;
+      margin-right:5px;
+      margin-top:5px;
+    } 
+    .date{
+      float:left;
+      font-size:15px;
+      color:#757575;
+      margin-top:10px;
+      margin-left:15px;
+    }
+  </style>
+  <div class="date">Wednesday, February 28</div>
+   <button class="menuicons finalcast mdl-button mdl-js-button mdl-button--icon">
+      <i class="finalcast material-icons">help_outline</i>
+    </button>
+    <button class="menuicons finalcast mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">power_settings_new</i>
+    </button>
+    <button class="menuicons finalcast mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">lock_outline</i>
+    </button>
+  </div>
+
+
+
+
+
+
+  
 </div>
 </a>
-</div>-->
+</div>
 
 
 
@@ -121,7 +543,7 @@ body {
   <div align="center">
  <div class="fuchsia">
    <div align="left">
-   <div class="google"><a href="#desktop"><img class="searchlogo" src="gicon.png"  alt="0x324545" style="width:20px;height:20px;"></a>
+   <div class="google"><a href="#desktop"><img class="searchlogo" src="assets/gicon.png"  alt="0x324545" style="width:20px;height:20px;"></a>
 <div class="ask">Ask for anything</div>
    </div></div>
    <style>
@@ -201,15 +623,15 @@ body {
      </style>
      
      
-     <a class="files1" href="#files"><img class="filesimg" src="down.png" alt="0x324578" style="width:50px;height:50px;"></a>
-          <a class="chrome1" href="#chrome"><img class="chromeimg" src="chrome.ico" alt="0x324578" style="width:50px;height:50px;"></a>
-       <a class="term1" href="#term"><img class="termimg" src="terminal.png" alt="0x324578" style="width:50px;height:50px;"></a>
-         <a class="calc1" href="#calc"><img class="calcimg" src="calc.png" alt="0x324578" style="width:50px;height:50px;"></a>
+     <a class="files1" href="#files"><img class="filesimg" src="assets/down.png" alt="0x324578" style="width:50px;height:50px;"></a>
+          <a class="chrome1" href="#chrome"><img class="chromeimg" src="assets/chrome.ico" alt="0x324578" style="width:50px;height:50px;"></a>
+       <a class="term1" href="#term"><img class="termimg" src="assets/terminal.png" alt="0x324578" style="width:50px;height:50px;"></a>
+         <a class="calc1" href="#calc"><img class="calcimg" src="assets/calc.png" alt="0x324578" style="width:50px;height:50px;"></a>
          
-         <a class="set1" href="#set"><img class="filesimg" src="set.png" alt="0x324578" style="width:50px;height:50px;"></a>
-          <a class="drive1" href="#drive"><img class="chromeimg" src="drive.png" alt="0x324578" style="width:50px;height:50px;"></a>
-       <a class="yt1" href="#yt"><img class="termimg" src="yt.ico" alt="0x324578" style="width:50px;height:50px;"></a>
-         <a class="next1" href="#next"><img class="nextimg" src="mail.png" alt="0x324578" style="width:50px;height:50px;"></a>
+         <a class="set1" href="#set"><img class="filesimg" src="assets/set.png" alt="0x324578" style="width:50px;height:50px;"></a>
+          <a class="drive1" href="#drive"><img class="chromeimg" src="assets/drive.png" alt="0x324578" style="width:50px;height:50px;"></a>
+       <a class="yt1" href="#yt"><img class="termimg" src="assets/yt.ico" alt="0x324578" style="width:50px;height:50px;"></a>
+         <a class="next1" href="#next"><img class="nextimg" src="assets/mail.png" alt="0x324578" style="width:50px;height:50px;"></a>
          
          
          
@@ -273,7 +695,7 @@ body {
          }
        </style>
        
-<img class="cof" src="nowcoffee.jpg" alt="0x324578" style="width:500px;height:275px;">
+<img class="cof" src="assets/nowcoffee.jpg" alt="0x324578" style="width:500px;height:275px;">
 <p class="header">Starbucks Coffee | Apple Valley, California - 9168 Rincon Avenue, 92308</p>
 <p class="text"><i><b>Close to you</b></i></p>
        </div>
@@ -317,7 +739,7 @@ body {
          }
        </style>
        
-<img class="map" src="nowmap.jpg" alt="0x324578" style="width:270px;height:100px;">
+<img class="map" src="assets/nowmap.jpg" alt="0x324578" style="width:270px;height:100px;">
 <p class="header1">25 Minutes to Work, Light Traffic</p>
 <p class="text1"><i><b>Reccomended by Google</b></i></p>
        </div>
@@ -358,7 +780,7 @@ body {
          }
          
        </style>
-<img class="sun" src="clouds.jpeg" alt="0x324578" style="width:270px;height:100px;">
+<img class="sun" src="assets/clouds.jpeg" alt="0x324578" style="width:270px;height:100px;">
 <p class="temp"></p>
 <p class="header10">Monday, February 5 -72 F</p>
 
